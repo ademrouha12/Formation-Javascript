@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascipt</title>
+</head>
+<body>
+  <script>
+  console.log("Hello world")
+  console.warn("Attention cette action peut avoir des conséquences imprivus")    
+  console.error("une erreure s'est produite")
+  // alert("Bonjour Adem")
+  var prénom="adem"
+  console.log(prénom)
+  var nombre=14
+  console.log(nombre)
+  console.log("Je m'appelle", prénom, ("mon age est "), nombre)
+  console.log("Je m'appelle "+ prénom)
+  const nombre1=15
+  console.log(nombre1)
+  // var username=prompt("Veuillez saisir votre nom")
+  // alert("Votre nom est "+ username)  
+  // condition
+  var note_html=1
+  var note_javascipt=5
+  var moyenne=(note_html + note_javascipt) / 2
+  console.log(moyenne)
+  if (moyenne > 10) {
+    console.log("Bravo! Vous avez réussez")
+  }
+  else if (moyenne == 10)
+    console.log("passage")
+  else {
+    console.log("Vous allez refaire l'année")
+    
+  }
+  const time= new Date().getHours()
+  console.log(time)
+  var greeting
+  if (time < 10) {
+    greeting="Bonjour"
+  }
+  else if (time < 20) {
+    greeting="Bonne journée"
+  }
+  else {
+    greeting="Bonsoir"
+  }
+  console.log(greeting)
+  // comparaison totale et comparaison partielle
+  var nombre2="5"
+  // comparaison partielle : on compare juste la valeur
+  if (nombre2 == 5) {
+    console.log("comparaison partielle: la valeur est égal apès la conversion ")
+
+    
+  }
+  else {
+    console.log("la comparaison parrtielle: la valeur est différente")
+  
+  }
+  // comparaison totale : on compare la valeur et le type
+  // if (nombre2 === 5) {
+  //   console.log("comparaison totale: la valeur et le type sont égaux ")
+
+    
+  // }
+  // else {
+  //   console.log("la comparaison totale: la valeur ou bien le type est défferent")
+  // }
+  // conditions ternaires Ecma Script 6 ES6
+  nombre2===5 ? console.log("comparaison totale: la valeur et le type sont égaux "):console.log("la comparaison totale: la valeur ou bien le type est défferent")
+  
+  
+  // Switch case
+  var day
+  switch (new Date().getDay()) {
+    case 0:
+      day = "Dimanche"
+      break;
+    case 1:
+      day = "Lundi"
+      break;
+
+    case 2: 
+    day = "Mardi"
+    break;
+    
+    case 3:
+      day = "Mercredi"
+      break;
+    case 4:
+      day = "Jeudi"
+
+    case 5:
+      day = "Vendredi"
+    case 6: 
+      day = "Samedi"  
+      
+      
+  
+    default:
+      console.log("Jour inconnu")
+      
+      break;
+    
+      
+  }
+  console.log(day);
+
+
+
+  var color = ""
+  switch (color) {
+    case "red":
+      color = "Arretez! le feu est rouge"  
+      
+      break;
+    case "orange":
+      color= "Attention! le feu est orange"  
+    case "green":
+      color= "Allez-y! le feu est vert"
+    default: 
+      console.log("La couleur est inconnue")
+      break;
+  }
+  console.log (color)
+
+  // Les fonctions
+
+  function salutation() {
+    console.log("Bonjour! Je suis Rouha Adem")    
+  }
+salutation()
+
+function somme(number1,number2) {
+  return number1 + number2
+  
+}
+console.log(somme(5,25))
+function multiplication(number1,number2,number3){
+  const multi = number1 * number2 * number3
+  return multi
+}
+console.log(multiplication(1,2,3))
+
+
+function increment(number1) {
+  return number1 + 1
+  // number ++ or number += 1
+}
+console.log(increment(10))
+
+function partie(number1) {
+  return number1 % 2 == 0? console.log("Ce nombre est paire"): console.log("Ce nombre est impaire")
+    
+  
+}
+partie(4)
+
+
+  </script>
+</body>
+</html>
