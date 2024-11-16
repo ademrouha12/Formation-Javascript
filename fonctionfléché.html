@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fonction fléché</title>
+</head>
+<body>
+  <script>
+    function addition (nombre1, nombre2) {
+      return nombre1 + nombre2;
+    }
+    console.log(addition(1, 5))
+
+  const additionf = (nb1, nb2) => nb1 + nb2
+
+  console.log(additionf(1,6))
+
+  function salutation () {
+    console.log("Bonjour tout le monde")
+  }
+  salutation ()
+
+  const salutation1 = () => console.log ("bonjour tout le monde")
+  salutation1()
+  
+  function paire (number1) {
+    if (number1 % 2 == 0){
+
+      return true
+    }
+    else {
+      return false
+
+    }
+  }
+  console.log(paire(5))  
+  const impaire = (number1) => number1 % 2 === 0
+    
+    console.log(impaire(2)) 
+
+  function multiplication (number1, number2){
+    const résultat = number1 * number2
+  return résultat
+  }
+  console.log(multiplication(3, 2))
+
+  const multiplication1 = (number1, number2) => number1 * number2
+
+  console.log(multiplication1(3, 3))
+
+  </script>
+</body>
+</html>
