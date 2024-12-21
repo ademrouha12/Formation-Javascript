@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Callback function</title>
+</head>
+<body>
+  <h2>
+    Callback function : une fanction qui est appelé à l'intérieur d'une autre fanction comme paramètre
+  </h2>
+  <p>
+    Le résultat de calcul est : 
+  </p>
+  <p id="demo">
+
+  </p>
+  <script>
+    function my_displayer (x){
+      document.getElementById("demo").innerHTML = x
+    }
+    function calcul (num1, num2, mycallback) {
+     let somme = num1 + num2
+     mycallback(somme)
+     
+    }
+    calcul(1,2,my_displayer)
+  </script>
+  
+</body>
+</html>

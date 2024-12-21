@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array ettiration</title>
+</head>
+<body>
+  <script>
+    const numbers = [45, 4, 9, 16, 25]
+    function double (num1) {
+      console.log(num1 * 2)
+      
+    }
+    numbers.forEach(double)
+
+    const num = [1, 2, 3, 4, 5]
+    function double2 (num) {
+      return num * 2
+
+    }
+    const doublenum = num.map(double2)
+    console.log(doublenum)
+
+    const numbre1 = [1, 2, 3, 4, 5, 6]
+    const evennumbers = numbre1.filter((num)=> num % 2 === 0)
+    console.log(evennumbers, "La fonction filter")
+
+    const number2 = [1, 2, 3, 4, 5]
+    const somme = number2.reduce((accumulateur, valeur_courante) => accumulateur + valeur_courante)
+    console.log(somme)
+
+    const numbers3 = [2, 4, 6, 8, 10]
+    const alleven = numbers3.every((num) => num % 2 === 0)
+    console.log(alleven)
+
+    const fruits = ["bannane", "poire", "pomme", "kiwi"]
+    const indexofpoire = fruits.indexOf("kiwi")
+    console.log(indexofpoire)
+
+    const result = fruits.find((fruits) => fruits.length>5)
+    console.log(result)
+
+    const numbers4 = [10, 20, 30, 40, 50]
+    const index = numbers4.findIndex((num) => num > 25)
+    console.log(index)
+  </script>
+  
+</body>
+</html>

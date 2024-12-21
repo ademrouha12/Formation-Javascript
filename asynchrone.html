@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fonction asynchrone</title>
+</head>
+<body>
+  <h1>
+    Javascript asynchron function
+  </h1>
+  <p>
+    Des fontions éxicutés en parallalès avec d'autres fontions sont appellés fontions asychrones
+  </p>
+  <h1 id="demo">
+
+  </h1>
+  <script>
+   /// setTimeout (my_function, 3000)
+   /// function my_function(){
+   ///   document.getElementById("demo").innerHTML="Hello dev"
+
+    ///}
+    setInterval(my_function,5000)
+    function my_function(){
+      let day = new Date();
+      document.getElementById("demo").innerHTML=
+      day.getHours() + ":" + 
+      day.getMinutes() + ":" + day.getSeconds()
+    }
+  </script>
+</body>
+</html>

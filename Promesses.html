@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les Promesse</title>
+</head>
+<body>
+  <h1>
+    JS promise object
+  </h1>
+  <p id="demo">
+
+  </p>
+  <script>
+    function my_displayer(somme){
+      document.getElementById("demo").innerHTML = somme
+    }
+    let my_promise = new Promise(function (resolve, reject){
+      let x = 0
+      if (x == 0){
+        resolve("OK")
+      }
+      else {
+        reject("Erreur")
+      }
+
+    })
+    my_promise.then(
+      function(value){
+        my_displayer(value)
+      },
+      function (Erreur) {
+      my_displayer("Erreur")
+      
+    }
+    )
+    
+  </script>
+</body>
+</html>
